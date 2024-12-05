@@ -1,5 +1,5 @@
 const grid = document.getElementById("grid");
-const gridSize = 10; // Change for larger/smaller grids
+const gridSize = 5; // Set grid size to 5x5
 let cursorX = 0;
 let cursorY = 0;
 
