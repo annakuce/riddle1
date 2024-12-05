@@ -25,10 +25,10 @@ function updateCursor() {
 
 // Listen for keypresses
 document.addEventListener("keydown", event => {
-    if (event.key === "ArrowUp") cursorY = Math.max(0, cursorY - 1);
-    if (event.key === "ArrowDown") cursorY = Math.min(gridSize - 1, cursorY + 1);
-    if (event.key === "ArrowLeft") cursorX = Math.max(0, cursorX - 1);
-    if (event.key === "ArrowRight") cursorX = Math.min(gridSize - 1, cursorX + 1);
+    if (event.key === "w") cursorY = Math.max(0, cursorY - 1); // Move up
+    if (event.key === "s") cursorY = Math.min(gridSize - 1, cursorY + 1); // Move down
+    if (event.key === "a") cursorX = Math.max(0, cursorX - 1); // Move left
+    if (event.key === "d") cursorX = Math.min(gridSize - 1, cursorX + 1); // Move right
 
     // Press "Enter" to fill the square
     if (event.key === "Enter") {
