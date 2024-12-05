@@ -30,12 +30,13 @@ document.addEventListener("keydown", event => {
     if (event.key === "a") cursorX = Math.max(0, cursorX - 1); // Move left
     if (event.key === "d") cursorX = Math.min(gridSize - 1, cursorX + 1); // Move right
 
-    // Press "Enter" to fill the square
-    if (event.key === "Enter") {
+    // Press "Space" to fill the square
+    if (event.key === " ") {
         const cell = document.querySelector(`.cell[data-x="${cursorX}"][data-y="${cursorY}"]`);
         if (cell) {
             cell.classList.add("filled");
         }
+        event.preventDefault(); // Prevent scrolling when pressing space
     }
 
     updateCursor();
