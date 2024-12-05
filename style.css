@@ -20,8 +20,8 @@ body {
 }
 
 .instructions .final-hint {
-    margin-top: 20px;
-    font-size: 18px;
+    margin-top: 10px 0;
+    font-size: 16px;
 }
 
 .game-container {
