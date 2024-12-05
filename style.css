@@ -18,18 +18,13 @@ body {
 }
 
 .instructions p {
-    margin: 10px 0;
+    margin: 20px 0;
     font-size: 16px; /* Uniform font size for all text */
 }
 
 .instructions .final-hint {
     margin-top: 20px;
     font-size: 16px;
-}
-
-/* Add extra space between the 2nd and 3rd lines */
-.instructions p:nth-child(2) {
-    margin-bottom: 20px; /* Bigger space between the second and third lines */
 }
 
 /* Add small margin between the two parts of the second clue */
