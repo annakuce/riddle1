@@ -32,6 +32,11 @@ body {
     margin-bottom: 20px; /* Bigger space between the second and third lines */
 }
 
+/* Add small margin between the two parts of the second clue */
+.clue-part2 {
+    margin-top: 10px; /* Add a small space between the first and second part of clue 2 */
+}
+
 .game-container {
     display: flex;
     justify-content: center;
