@@ -1,4 +1,5 @@
 const grid = document.getElementById("grid");
+const clearButton = document.getElementById("clearButton");
 const gridSize = 5; // Set grid size to 5x5
 let cursorX = 0;
 let cursorY = 0;
@@ -44,3 +45,11 @@ document.addEventListener("keydown", event => {
 
 // Initialize cursor position
 updateCursor();
+
+// Clear the grid and reset cursor when the "Reset grid" button is clicked
+clearButton.addEventListener("click", () => {
+    document.querySelectorAll(".cell").forEach(cell => cell.classList.remove("filled"));
+    cursorX = 0;
+    cursorY = 0;
+    updateCursor();
+});
