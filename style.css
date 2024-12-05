@@ -11,23 +11,32 @@ body {
 }
 
 .instructions {
+    text-align: left; /* Left-align the text */
+    padding-left: 20px; /* Add a little padding from the left edge */
     margin-bottom: 20px;
+    width: 80%; /* Limit the width to keep text from stretching too far */
 }
 
 .instructions p {
     margin: 10px 0;
-    font-size: 16px;
+    font-size: 16px; /* Uniform font size for all text */
 }
 
 .instructions .final-hint {
-    margin-top: 10px 0;
+    margin-top: 20px;
     font-size: 16px;
+}
+
+/* Add extra space between the 2nd and 3rd lines */
+.instructions p:nth-child(2) {
+    margin-bottom: 20px; /* Bigger space between the second and third lines */
 }
 
 .game-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 #grid {
@@ -35,6 +44,7 @@ body {
     grid-template-columns: repeat(5, 50px); /* 5 columns */
     grid-template-rows: repeat(5, 50px); /* 5 rows */
     gap: 2px;
+    margin: 0 auto; /* Center the grid */
 }
 
 .cell {
@@ -53,3 +63,17 @@ body {
     background-color: black;
 }
 
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
